@@ -1,0 +1,3 @@
+[submodule "libgav1"]
+	path = libgav1
+	url = https://chromium.googlesource.com/codecs/libgav1
