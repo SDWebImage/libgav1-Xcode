@@ -21,10 +21,10 @@ let package = Package(
             name: "libgav1",
             dependencies: [],
             path: ".",
-            exclude: ["libgav1/src/dsp/arm", "libgav1/src/dsp/x86", "libgav1/src/dsp/average_blend_test.cc", "libgav1/src/dsp/cdef_test.cc", "libgav1/src/dsp/convolve_test.cc", "libgav1/src/dsp/distance_weighted_blend_test.cc", "libgav1/src/dsp/dsp_test.cc", "libgav1/src/dsp/intra_edge_test.cc", "libgav1/src/dsp/intrapred_cfl_test.cc", "libgav1/src/dsp/intrapred_directional_test.cc", "libgav1/src/dsp/intrapred_filter_test.cc", "libgav1/src/dsp/intrapred_test.cc", "libgav1/src/dsp/inverse_transform_test.cc", "libgav1/src/dsp/loop_filter_test.cc", "libgav1/src/dsp/loop_restoration_test.cc", "libgav1/src/dsp/mask_blend_test.cc", "libgav1/src/dsp/motion_field_projection_test.cc", "libgav1/src/dsp/motion_vector_search_test.cc", "libgav1/src/dsp/obmc_test.cc", "libgav1/src/dsp/super_res_test.cc", "libgav1/src/dsp/warp_test.cc", "libgav1/src/dsp/weight_mask_test.cc"],
-            sources: ["libgav1/src", "libgav1/src/dsp/generate"],
+            exclude: ["libgav1/src/dsp/average_blend_test.cc", "libgav1/src/dsp/cdef_test.cc", "libgav1/src/dsp/convolve_test.cc", "libgav1/src/dsp/distance_weighted_blend_test.cc", "libgav1/src/dsp/dsp_test.cc", "libgav1/src/dsp/intra_edge_test.cc", "libgav1/src/dsp/intrapred_cfl_test.cc", "libgav1/src/dsp/intrapred_directional_test.cc", "libgav1/src/dsp/intrapred_filter_test.cc", "libgav1/src/dsp/intrapred_test.cc", "libgav1/src/dsp/inverse_transform_test.cc", "libgav1/src/dsp/loop_filter_test.cc", "libgav1/src/dsp/loop_restoration_test.cc", "libgav1/src/dsp/mask_blend_test.cc", "libgav1/src/dsp/motion_field_projection_test.cc", "libgav1/src/dsp/motion_vector_search_test.cc", "libgav1/src/dsp/obmc_test.cc", "libgav1/src/dsp/super_res_test.cc", "libgav1/src/dsp/warp_test.cc", "libgav1/src/dsp/weight_mask_test.cc"],
+            sources: ["libgav1/src"],
             publicHeadersPath: "include",
-            cSettings: [.headerSearchPath("generate"), .headerSearchPath("libgav1"), .headerSearchPath("libgav1/src"), .define("LIBGAV1_THREADPOOL_USE_STD_MUTEX", to: "1"), .define("LIBGAV1_MAX_BITDEPTH", to: "10")]
+            cSettings: [.headerSearchPath("libgav1"), .headerSearchPath("include"), .define("LIBGAV1_THREADPOOL_USE_STD_MUTEX", to: "1"), .define("LIBGAV1_MAX_BITDEPTH", to: "10")]
         )
     ],
     cLanguageStandard: .gnu11,
